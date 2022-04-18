@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 153px;
   padding: 10px 0;
-  background: url('../../img/header.png') top center /cover no-repeat;
+  background: url('../img/header.png') top center /cover no-repeat;
   @media (max-width: 676px) {
     margin-top: -12px;
   }
@@ -195,7 +195,7 @@
     width: 266px;
     height: 100px;
     padding: 20px 25px 20px 43px;
-    background-image: url('../../img/avatar/canvas.png');
+    background-image: url('../img/avatar/canvas.png');
     background-position: top left;
     background-size: contain;
     background-repeat: no-repeat;
@@ -281,7 +281,7 @@
     justify-content: center;
     width: 197px;
     height: 175px;
-    background: url('../../img/avatar/avatar_temp.png') center /contain no-repeat;
+    background: url('../img/avatar/avatar_temp.png') center /contain no-repeat;
     transition: filter .3s ease 0s;
     overflow: hidden;
     &:hover {
@@ -325,7 +325,7 @@
     width: 32px;
     height: 32px;
     border-radius: 6px;
-    background: $palette_notif url('../../img/avatar/notif_icon.png') center /28px 28px no-repeat;
+    background: $palette_notif url('../img/avatar/notif_icon.png') center /28px 28px no-repeat;
     @media (max-width: 878px) {
       top: 39px;
     }

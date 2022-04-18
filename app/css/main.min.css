@@ -262,11 +262,11 @@ body.home .wrapper {
   width: 100%;
   min-height: 153px;
   padding: 10px 0;
-  background: url("../../img/header.png") top center/cover no-repeat;
+  background: url("../img/header.png") top center/cover no-repeat;
 }
 
 ._webp .header {
-  background-image: url(../../img/header.png?x-oss-process=image/format,webp);
+  background-image: url(../img/header.png?x-oss-process=image/format,webp);
 }
 @media (max-width: 676px) {
   .header {
@@ -603,14 +603,14 @@ body.home .wrapper {
   width: 266px;
   height: 100px;
   padding: 20px 25px 20px 43px;
-  background-image: url("../../img/avatar/canvas.png");
+  background-image: url("../img/avatar/canvas.png");
   background-position: top left;
   background-size: contain;
   background-repeat: no-repeat;
   overflow: hidden;
 }
 ._webp .user__info {
-  background-image: url(../../img/avatar/canvas.png?x-oss-process=image/format,webp);
+  background-image: url(../img/avatar/canvas.png?x-oss-process=image/format,webp);
 }
 .user__info .user__info-show {
   position: relative;
@@ -717,7 +717,7 @@ body.home .wrapper {
   justify-content: center;
   width: 197px;
   height: 175px;
-  background: url("../../img/avatar/avatar_temp.png") center/contain no-repeat;
+  background: url("../img/avatar/avatar_temp.png") center/contain no-repeat;
   -webkit-transition: -webkit-filter 0.3s ease 0s;
   transition: -webkit-filter 0.3s ease 0s;
   -o-transition: filter 0.3s ease 0s;
@@ -726,7 +726,7 @@ body.home .wrapper {
   overflow: hidden;
 }
 ._webp .user__avatar {
-  background-image: url(../../img/avatar/avatar_temp.png?x-oss-process=image/format,webp);
+  background-image: url(../img/avatar/avatar_temp.png?x-oss-process=image/format,webp);
 }
 .user__avatar:hover {
   -webkit-filter: brightness(110%);
@@ -779,10 +779,10 @@ body.home .wrapper {
   width: 32px;
   height: 32px;
   border-radius: 6px;
-  background: #E0DDCE url("../../img/avatar/notif_icon.png") center/28px 28px no-repeat;
+  background: #E0DDCE url("../img/avatar/notif_icon.png") center/28px 28px no-repeat;
 }
 ._webp .user__notif {
-  background-image: url(../../img/avatar/notif_icon.png?x-oss-process=image/format,webp);
+  background-image: url(../img/avatar/notif_icon.png?x-oss-process=image/format,webp);
 }
 @media (max-width: 878px) {
   .user__notif {
@@ -836,13 +836,13 @@ body.home .wrapper {
 }
 @media (max-width: 2156px) {
   .footer {
-    background-image: url("../../img/footer.png");
+    background-image: url("../img/footer.png");
     background-size: auto;
     background-position: center bottom;
     background-repeat: no-repeat;
   }
   ._webp .footer {
-    background-image: url(../../img/footer.png?x-oss-process=image/format,webp);
+    background-image: url(../img/footer.png?x-oss-process=image/format,webp);
   }
 }
 @media (max-width: 574px) {
@@ -922,10 +922,10 @@ body.home .wrapper {
   right: -10px;
   width: 20px;
   height: 50px;
-  background: url("../../img/nav/nav_decor.png") center/contain no-repeat;
+  background: url("../img/nav/nav_decor.png") center/contain no-repeat;
 }
 ._webp .item-menu:not(:last-child)::before {
-  background-image: url(../../img/nav/nav_decor.png?x-oss-process=image/format,webp);
+  background-image: url(../img/nav/nav_decor.png?x-oss-process=image/format,webp);
 }
 @media (max-width: 767.98px) {
   .item-menu::before {

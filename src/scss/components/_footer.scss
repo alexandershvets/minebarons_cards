@@ -2,7 +2,7 @@
   position: relative;
   padding: 20px 0 40px;
   @media (max-width: 2156px) {
-    background-image: url('../../img/footer.png');
+    background-image: url('../img/footer.png');
     background-size: auto;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -64,7 +64,7 @@
       right: -10px;
       width: 20px;
       height: 50px;
-      background: url('../../img/nav/nav_decor.png') center /contain no-repeat;
+      background: url('../img/nav/nav_decor.png') center /contain no-repeat;
     }
   }
   @media (max-width: $md3 + px) {
