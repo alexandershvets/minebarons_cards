@@ -257,6 +257,9 @@
 .main {
   // .main__container
   &__container {
+    @media (max-width: $md4 + px) {
+      padding: 0 13px;
+    }
   }
   // .main__body
   &__body {
@@ -301,6 +304,10 @@
     .slider__item {
       border: 3px solid $palette_border_cart_top;
       background: rgba(255, 255, 255, 0.1);
+      &:hover {
+        border: 3px solid lighten($color_darkorange, 5%);
+        box-shadow: 0 0 10px 1px lighten($color_darkorange, 5%);
+      }
     }
   }
   // .slider_bottom
@@ -308,6 +315,10 @@
     .slider__item {
       border: 3px solid $palette_border_cart_bottom;
       background-color: rgba($palette_cart_background, 15%);
+      &:hover {
+        border: 3px solid lighten($color_darkorange, 5%);
+        box-shadow: 0 0 10px 1px lighten($color_darkorange, 5%);
+      }
     }
   }
   // .slider__controls
@@ -317,25 +328,28 @@
   &__body {
     display: flex;
     justify-content: center;
+    padding: 0 10px;
   }
   // .slider__slide
   &__slide {
     display: flex;
     justify-content: center;
+    padding: 10px 0;
   }
   // .slider__item
   &__item {
     position: relative;
     @include adaptiv-value("width", 270, 170, 1);
     padding-bottom: 135%;
-
     border-radius: 4px;
     cursor: pointer;
-    // &:hover {
-    //   .slider__card {
-    //     filter: brightness(100%);
-    //   }
-    // }
+    transition: all .3s ease 0s;
+    &:hover {
+      filter: brightness(125%);
+      // .slider__card {
+      //   filter: brightness(100%);
+      // }
+    }
     @media (max-width: $md4 + px) {
       width: 200px;
     }

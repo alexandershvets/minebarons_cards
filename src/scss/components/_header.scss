@@ -134,9 +134,11 @@
 .item-resurs {
   display: flex;
   align-items: center;
-  transition: filter .25s ease 0s;
+  transition: all .25s ease 0s;
   &:hover {
-    filter: brightness(130%);
+    filter: brightness(116%);
+    transform: scale(1.05);
+    // transform: translateY(-3px);
   }
   @media (max-width: 1330px) {
     flex-direction: column;

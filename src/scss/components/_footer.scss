@@ -2,7 +2,7 @@
   position: relative;
   padding: 20px 0 40px;
   @media (max-width: 2156px) {
-    background-image: url('../img/footer_2.png');
+    background-image: url('../img/footer.png');
     background-size: auto;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -78,11 +78,25 @@
   }
   // .item-menu__link
   &__link {
+    &:hover {
+      .item-menu__image {
+        transform: translateY(-5px);
+      }
+      .item-menu__title {
+        color: $color_orange;
+        text-shadow:
+          // 0 0 5px #fff,
+          0 0 10px $color_orange,
+          0 0 15px $color_orange,
+          0 0 20px $color_orange;
+      }
+    }
   }
   // .item-menu__image
   &__image {
     @include adaptiv-value("width", 123, 70, 1);
     @include adaptiv-value("height", 105, 56, 1);
+    transition: transform .3s ease 0s;
     picture {
       width: 100%;
       height: 100%;
@@ -90,6 +104,7 @@
     img {
       max-width: 100%;
     }
+
     @media (max-width: 574px) {
       width: 70px;
       height: 70px;
@@ -101,6 +116,7 @@
     line-height: math.div(24, 14) * 100%;
     color: #fff;
     text-transform: uppercase;
+    transition: all .3s ease 0s;
     @media (max-width: $md1 + px) {
       margin-top: 20px;
     }
