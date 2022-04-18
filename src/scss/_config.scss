@@ -1,0 +1,101 @@
+@use "sass:math";
+@use 'sass:color';
+
+@import "mixins";
+@import "fonts";
+
+// COLORS
+$color_black: #1E120D;
+$color_dark: #28251F;
+$color_white: #fff;
+$color_red: #E00303;
+$color_purple: #7C4BEC;
+$color_orange: #D9B554;
+$color_darkorange: #948A36;
+$color_grey: #898C86;
+$color_lightgrey: #E0DDCE;
+$color_brown: #392217;
+
+$accent:                     $color_orange;
+$palette_main_bg:            $color_black;
+$palette_item_title:         $color_white;
+$palette_item_subtitle:      $color_orange;
+$palette_param_left:         $color_red;
+$palette_param_right:        $color_purple;
+$palette_username:           $color_dark;
+$palette_notif:              $color_lightgrey;
+$palette_border_cart_top:    $color_grey;
+$palette_border_cart_bottom: $color_darkorange;
+$palette_cart_background:    $color_darkorange;
+$palette_mobile_menu:        $color_black;
+$palette_burger:             $color_darkorange;
+$palette_second_menu_link:   $color_brown;
+
+// VARIABLES
+//...
+
+// FONTS
+$fontFamily: AlbertusBold, sans-serif;
+$fontWeight: 400;
+$fontSize: 18px;
+$textColor: $color_white;
+$lineHeight: 1;
+
+// GRID
+$minWidth: 320px;
+$maxWidth: 2600;
+$maxWidthContainer: 1480;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+@import "null";
+body {
+  display: flex;
+  align-items: flex-start;
+  font-family: $fontFamily;
+  font-size: 100%;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  background-color: $palette_main_bg;
+  color: $textColor;
+  line-height: $lineHeight;
+  overflow-x: hidden;
+  &._lock {
+    overflow-x: hidden;
+  }
+  &.home {
+    .wrapper {
+      background-image: url('../img/main_bg.jpg');
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+      @media (min-width: 2156px) and (max-height: 900px) {
+        background-position: top -160px center;
+      }
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  &._loaded {}
+  position: relative;
+  left: 0;
+  transition: left .3s ease 0s;
+  &._active {
+    left: 300px;
+  }
+}
+
+._container {
+  max-width: $maxWidthContainer + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
