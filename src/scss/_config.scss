@@ -84,10 +84,15 @@ body {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
-  &._loaded {}
   position: relative;
   left: 0;
-  transition: left .3s ease 0s;
+  opacity: 0;
+  transition:
+    left .3s ease 0s,
+    opacity 1.0s ease 0s;
+  &._loaded {
+    opacity: 1;
+  }
   &._active {
     left: 300px;
   }

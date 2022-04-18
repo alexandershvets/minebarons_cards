@@ -173,9 +173,13 @@ body.home .wrapper {
   overflow: hidden;
   position: relative;
   left: 0;
-  -webkit-transition: left 0.3s ease 0s;
-  -o-transition: left 0.3s ease 0s;
-  transition: left 0.3s ease 0s;
+  opacity: 0;
+  -webkit-transition: left 0.3s ease 0s, opacity 1s ease 0s;
+  -o-transition: left 0.3s ease 0s, opacity 1s ease 0s;
+  transition: left 0.3s ease 0s, opacity 1s ease 0s;
+}
+.wrapper._loaded {
+  opacity: 1;
 }
 .wrapper._active {
   left: 300px;
